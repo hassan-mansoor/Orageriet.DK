@@ -1,0 +1,99 @@
+@import "../../../_theme_variables";
+
+#tm_manufacturers_block {
+	h4 {
+		color: #46c29b;
+		font: normal 24px / 32px $font-custom;
+		margin: 0 0 7px;
+		padding: 12px 0 0;
+		text-align: center;
+	}
+	.bx-wrapper {
+		margin: 0 auto !important;	
+		padding: 0 20px;
+		position: relative;
+		@media only screen and (min-width: 1200px) {
+			margin:0 -27px !important;	
+		}
+		.bx-viewport {
+			padding:0 7px;	
+		}	
+	}
+	.manufacturers_items {
+		li {
+			padding:15px 0;
+			a {
+				background: #fff;
+				display: block;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+				@include box-shadow(2px 3px 7px rgba(0,0,0,0.12));
+				@include transition(all 0.2s ease);
+				@include border-radius(3px);
+				&:hover {
+					@include box-shadow(-2px -3px 7px rgba(0,0,0,0.12));	
+				}
+				&:active, &:active:focus {	
+					@include box-shadow(0 8px 8px 0 rgba(0, 0, 0, 0.2));
+				}
+				div {
+					z-index:5;	
+				}
+				img {
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.bx-controls-direction a {
+		background: #46c29b;		
+		display: block;
+		float: left;
+		height: 44px;
+		margin-top: -5px;
+		text-align: center;
+		width: 44px;
+		z-index: 5;
+		@include border-radius(50%);
+		@include box-shadow(2px 3px 7px rgba(0,0,0,0.12));
+		@include transition(all 0.2s ease);
+		&:before {
+			line-height:44px;
+			font-size:24px;
+			color:#fff;
+		}
+		&:hover {
+			background: #00796b;
+			&:before {
+				color:#fff;
+			}	
+		}
+		&.bx-prev {
+			left:20px;
+			@media only screen and (min-width: 1300px) {
+				left:6px;
+			}
+			@media (max-width: $screen-xs-max) { // max 767px
+				left: -10px;
+			}
+			&:before {
+				content:'\f104';
+				padding:0;
+			}
+		}
+		&.bx-next {
+			right:20px;
+			@media only screen and (min-width: 1300px) {
+				right:6px;
+			}
+			@media (max-width: $screen-xs-max) { // max 767px
+				right: -10px;
+			}
+			&:before {
+				content:'\f105';
+				padding:0;
+			}
+		}
+	}
+}

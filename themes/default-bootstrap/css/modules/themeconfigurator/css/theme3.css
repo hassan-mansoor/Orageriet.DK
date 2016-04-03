@@ -1,0 +1,202 @@
+.price.product-price,
+.footer-container #footer h4,
+.footer-container #footer h4 a,
+.block .title_block, .block h4,
+.block .title_block a, .block h4 a,
+.home-column #tm_manufacturers_block h4,
+header .top_menu .is-megamenu ul.content > li > a,
+#home-page-tabs > li.active a,
+#home-page-tabs > li a:hover,
+#layer_cart .layer_cart_product h2,
+#htmlcontent_top ul li .item-html h3,
+#productscategory_list .product-name a {
+  color: #00bcd4; }
+
+.special-price,
+.product-name a:hover,
+.footer-container #footer a:hover,
+.footer-container #footer h4 a:hover,
+.content_scene_cat span.category-name,
+.price.product-price.product-price-new,
+.footer-container #footer #block_contact_infos ul li:before,
+a.product-name:hover,
+header .top_menu li li:hover > a,
+header .top_menu li li.sfHover > a,
+header .top_menu li li.sfHoverForce > a,
+header .top_menu .is-megamenu ul.content > li > a:hover,
+#our_price_display.new-price,
+#subcategories ul li .subcategory-name:hover {
+  color: #f8565d; }
+
+.price-percent-reduction {
+  color: #cddc39; }
+
+.newsletter-overlay .tmnewsletter-header h4 {
+  color: #00bcd4; }
+.newsletter-overlay .icon.tmnewsletter-close,
+.newsletter-overlay .tmnewsletter-submit.btn.btn-default {
+  background: #00bcd4; }
+  .newsletter-overlay .icon.tmnewsletter-close:hover,
+  .newsletter-overlay .tmnewsletter-submit.btn.btn-default:hover {
+    background: #f8565d; }
+
+header .top_menu > ul > li > a:before,
+body #habla_window_div #habla_topbar_div,
+#home-page-tabs > li a:after {
+  background: #00bcd4; }
+
+.new-box,
+nav #header-login-content,
+#homepage-blog .blog-image a .date-added,
+#homepage-slider .bx-wrapper .bx-controls-direction a:hover,
+#htmlcontent_top ul li.htmlcontent-item-3 > a:hover .item-html {
+  background: #f8565d; }
+
+.sale-box,
+.label-success,
+ul.product_list .availability span.available-now,
+#htmlcontent_top ul li.htmlcontent-item-3 .item-html {
+  background: #cddc39; }
+
+nav #header-login .header_user_info.current a {
+  background: #00bcd4; }
+nav #header-login:hover .header_user_info a {
+  background: #f8565d; }
+
+header .top_menu .menu-title,
+#header .shopping_cart > a:first-child {
+  background: #00bcd4; }
+  header .top_menu .menu-title:hover,
+  #header .shopping_cart > a:first-child:hover {
+    background: #f8565d; }
+
+#header .cart_block {
+  background: #f8565d; }
+  #header .cart_block .cart-prices {
+    background-color: #cddc39; }
+
+header .top_menu > ul > li > a {
+  color: #00bcd4; }
+  @media (max-width: 767px) {
+    header .top_menu > ul > li > a {
+      background: #f8565d;
+      color: #fff; } }
+
+@media (max-width: 767px) {
+  header .top_menu > ul > li:hover > a,
+  header .top_menu > ul > li.sfHover > a,
+  header .top_menu > ul > li.sfHoverForce > a,
+  header .top_menu > ul > li > a:hover {
+    background: #00bcd4;
+    color: #fff; } }
+
+#my-account ul.myaccount-link-list li a:hover {
+  background: #f8565d;
+  border-color: #e5474e; }
+
+ul.step li.step_current,
+ul.step li.step_current span:after {
+  background: #f8565d;
+  border-color: #f8565d; }
+
+ul.step li.step_done a:after,
+ul.step li.step_done.step_done_last a:after,
+ul.step li.step_done {
+  background: #fc7177;
+  border-color: #f8565d; }
+
+ul.step a:hover,
+ul.step a:hover:after {
+  background: #f8565d !important;
+  border-color: #e5474e !important; }
+
+.label-success {
+  background: #e5474e; }
+
+.btn-success {
+  background: #f8565d;
+  border: none;
+  color: #fff; }
+  .btn-success:hover, .btn-success:active, .btn-success:active:focus, .btn-success:focus {
+    background: #fc7177; }
+
+.home-column #tm_manufacturers_block .bx-controls-direction a,
+nav #tmsearch .btn.button-search,
+#footer #newsletter_block_left .form-group .btn-sm,
+#center_column .tab-content .bx-controls-direction a {
+  background: #00bcd4; }
+  .home-column #tm_manufacturers_block .bx-controls-direction a:hover,
+  nav #tmsearch .btn.button-search:hover,
+  #footer #newsletter_block_left .form-group .btn-sm:hover,
+  #center_column .tab-content .bx-controls-direction a:hover {
+    background: #f8565d; }
+
+nav #header-login-content p.logout .btn-default,
+nav #header-login-content p.submit .btn-default {
+  background: #00bcd4; }
+  nav #header-login-content p.logout .btn-default:hover,
+  nav #header-login-content p.submit .btn-default:hover {
+    background: #cddc39; }
+
+ul.product_list .product-image-container .quick-view {
+  background: rgba(0, 188, 212, 0.7); }
+  ul.product_list .product-image-container .quick-view:hover {
+    background: #00bcd4; }
+
+#languages-block-top div.current:after,
+#currencies-block-top div.current:after {
+  color: #00bcd4; }
+#languages-block-top ul,
+#currencies-block-top ul {
+  background: #f8565d; }
+  #languages-block-top ul li.selected,
+  #languages-block-top ul li.selected > span,
+  #languages-block-top ul li.selected a,
+  #languages-block-top ul li:hover a,
+  #currencies-block-top ul li.selected,
+  #currencies-block-top ul li.selected > span,
+  #currencies-block-top ul li.selected a,
+  #currencies-block-top ul li:hover a {
+    color: #f8565d; }
+
+#homepage-slider #homeslider li {
+  background: #00bcd4; }
+  #homepage-slider #homeslider li button {
+    color: #00bcd4; }
+  #homepage-slider #homeslider li:nth-child(2) {
+    background: #f8565d; }
+    #homepage-slider #homeslider li:nth-child(2) button {
+      color: #f8565d; }
+  #homepage-slider #homeslider li:nth-child(3) {
+    background: #cddc39; }
+    #homepage-slider #homeslider li:nth-child(3) button {
+      color: #cddc39; }
+  #homepage-slider #homeslider li:nth-child(4) {
+    background: #6fdc39; }
+    #homepage-slider #homeslider li:nth-child(4) button {
+      color: #6fdc39; }
+  #homepage-slider #homeslider li:nth-child(5) {
+    background: #d161d0; }
+    #homepage-slider #homeslider li:nth-child(5) button {
+      color: #d161d0; }
+
+.btn.btn-default {
+  background: #00bcd4; }
+  .btn.btn-default:hover, .btn.btn-default:active, .btn.btn-default:active:focus, .btn.btn-default:focus {
+    background: #cddc39; }
+
+#htmlcontent_home ul li a .item-html {
+  background: #00bcd4; }
+#htmlcontent_home ul li a:hover .item-html {
+  color: #00bcd4; }
+#htmlcontent_home ul li.htmlcontent-item-1 a .item-html {
+  background: #f8565d; }
+#htmlcontent_home ul li.htmlcontent-item-1 a:hover .item-html {
+  color: #f8565d; }
+
+#productscategory_list .product-name a,
+.accessories-block .product-name a {
+  color: #f8565d; }
+  #productscategory_list .product-name a:hover,
+  .accessories-block .product-name a:hover {
+    color: #00bcd4; }

@@ -1,0 +1,24 @@
+@import "../../../_theme_variables";
+ul.product_list .product-image-container img {background-color:#fff;}
+.gallery-thumb-list {
+	margin:0;
+	position:absolute;
+	right:10px;
+	top:10px;
+	width:14.3%;
+}
+.gallery-thumb-list li {
+	margin-bottom:6px;
+}
+.gallery-thumb-list li a img {
+	border:1px solid #e6e6e6;	
+	@include border-radius(3px);
+	transition-delay:0s;
+	@media only screen and (min-width: 1200px) {
+		opacity:0;
+	}
+}
+
+.gallery-thumb-list li.active a img {
+	@include box-shadow(2px 3px 7px rgba(0,0,0,0.12));
+}

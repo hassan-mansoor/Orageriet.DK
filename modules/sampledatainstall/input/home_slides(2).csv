@@ -1,0 +1,7 @@
+"Slide ID";Active;Position;Description;Title;Legend;Url;Image
+1;1;0;"<h2>special<br />offer</h2>
+<p><button>Shop now!</button></p>";"Sample 1";sample-1;index.php?id_category=13&controller=category;d423f7c6d3a16ecbb184052fde17d13e46e68674_slider1.png
+2;1;0;"<h2>Sale<br /> 50% off</h2>
+<p><button>Shop now!</button></p>";"Sample 2";sample-2;index.php?id_category=14&controller=category;87b42625781fe58d22e5028ddb0d7c2363e0de9d_slider2.png
+3;1;0;"<h2>BUY 2 ITEMS <strong>GET ONE FOR FREE</strong></h2>
+<p><button>Shop now!</button></p>";"Sample 3";sample-3;index.php?id_category=15&controller=category;58d9015aec83e5f60aa390240461e7ad7532b532_slider3.png

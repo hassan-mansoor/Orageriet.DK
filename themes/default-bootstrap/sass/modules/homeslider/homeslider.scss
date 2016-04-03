@@ -1,0 +1,407 @@
+@import "../../_theme_variables";
+
+/******************************************************************************
+						Home Page Slider
+*******************************************************************************/
+#homepage-slider {
+	padding-left: 0;
+	padding-right: 0;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	#homeslider {
+		margin: 0 auto;
+		padding: 0;
+		li {
+			background:#46c29b;
+			@include box-shadow(inset 0 0 20px rgba(0,0,0,0.17));
+			button {
+				color:#46c29b;	
+			}
+			&:nth-child(2) {
+				background:#00bbd3;
+				button {
+					color:#00bbd3;	
+				}
+			}
+			&:nth-child(3) {
+				background:#009587;
+				button {
+					color:#009587;	
+				}
+			}
+			&:nth-child(4) {
+				background:#6639b6;
+				button {
+					color:#6639b6;	
+				}
+			}	
+			&:nth-child(5) {
+				background:#3e50b4;
+				button {
+					color:#3e50b4;	
+				}
+			}
+		}
+	}
+	.homeslider-description {
+		width:100%;
+		cursor: pointer;
+		width:100%;
+		height:100%;
+		.descLink {
+			display:block;
+			width:100%;
+			height:100%;
+			.descInner {
+				padding:10% 4% 0 40%;
+				text-align:center;
+			}
+		}
+		h2 {
+			font: 300 112px / 107px $font-custom;
+			color: white;
+			margin: 3px 0 31px;
+			padding: 0;
+			position:relative;
+			text-shadow: 2px 3px 7px rgba(0,0,0,0.12);
+			text-transform:uppercase;
+			strong {
+				font: 300 52px / 77px $font-custom;
+				display:block;
+				margin:9px 0 -10px;
+			}
+		}
+		button {
+			font: normal 24px / 32px $font-custom;
+			padding:9px 28px 14px;
+			background:#fff;
+			border:none;
+			position:relative;
+			@include border-radius(3px);
+			@include box-shadow(2px 3px 7px rgba(0,0,0,0.12));
+			&:hover,
+			&:active,
+			&:active:focus,
+			&:focus {
+				@include box-shadow(0 2px 5px 0 rgba(0, 0, 0, 0.26));
+			}
+			&:active, &:active:focus {	
+				@include box-shadow(0 8px 17px 0 rgba(0, 0, 0, 0.2));
+			}
+		}
+		@media (max-width: 1700px) { // max 1700px
+			h2 {
+				font: 300 80px / 80px $font-custom;
+				margin-bottom: 20px;
+			}
+		}
+		@media (max-width: 1600px) { // max 1600px
+			.descLink {
+				.descInner {
+					padding: 8% 4% 0 40%;
+				}
+			}
+			h2 {
+				font: 300 70px / 70px $font-custom;
+				margin-bottom: 20px;
+			}
+		}
+		@media (max-width: 1500px) { // max 1500px
+			.descLink {
+				.descInner {
+					padding: 7% 4% 0 40%;
+				}
+			}
+		}
+		@media (max-width: $screen-md-max) { // max 1200px
+			.descLink {
+				.descInner {
+					padding: 6% 4% 0 40%;
+				}
+			}
+			h2 {
+				font: 300 65px / 65px $font-custom;
+				margin: 3px 0 18px;
+				strong {
+					font: 300 40px / 55px $font-custom;
+					margin:9px 0 -10px;
+				}
+			}
+			button {
+				font: normal 20px / 22px $font-custom;
+				padding:7px 20px 12px;
+			}
+		}
+		@media (max-width: $screen-sm-max) { // max 991px
+			.descLink {
+				.descInner {
+					padding: 5% 4% 0 40%;
+				}
+			}
+			h2 {
+				font: 300 55px / 55px $font-custom;
+				margin: 0 0 15px;
+				strong {
+					font: 300 20px / 20px $font-custom;
+					margin:9px 0 -10px;
+				}
+			}
+			button {
+				font: normal 16px / 18px $font-custom;
+				padding: 6px 18px 10px;
+			}
+		}
+		@media (min-width: $screen-xs) and (max-width: $screen-xs-max) { // min 480px max 767px
+			.descLink {
+				.descInner {
+					padding: 11% 4% 0 40%;
+				}
+			}
+			h2 {
+				display: none;
+			}
+			button {
+				font: normal 14px / 20px $font-custom;
+				padding:5px 18px 10px;
+			}
+		}
+		@media (max-width: $screen-xs - 1) { // max 479px
+			display: none;
+		}
+	}
+
+}
+/*****************************************************************************
+						BXSlider Styles
+********************************************************************************/
+//RESET AND LAYOUT
+#homepage-slider {
+	.homeslider-container {
+		position: relative;
+	}
+	.homeslider-image {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.homeslider-description {
+		position: absolute;
+		left: 0;
+  		top: 0;
+	}
+	.bx-wrapper {
+		position: relative;
+		padding: 0;
+		*zoom: 1;
+		a {
+			display: block;
+		}
+		img {
+			display: block;	
+			max-width: 100%;
+			height: auto;
+			margin:0 auto;
+		}
+	}
+	// THEME
+	.bx-wrapper {
+		.bx-viewport {
+			width: 100%;
+		}
+	}
+	.bx-wrapper .bx-pager,
+	.bx-wrapper .bx-controls-auto {
+		position: absolute;
+		bottom:30px;
+		width:100%;
+		z-index:999;
+	}
+	//LOADER
+	.bx-wrapper .bx-loading {
+		min-height: 50px;
+		background: url(images/bx_loader.gif) center center no-repeat $light-background;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2000;
+	}
+	//PAGER
+	.bx-wrapper .bx-pager {
+		text-align: center;
+		font-size: .85em;
+		font-family: $font-family;
+		font-weight: bold;
+		color: #666;
+		padding-top: 20px;
+	}
+	.bx-wrapper .bx-pager .bx-pager-item,
+	.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+		display: inline-block;
+		*zoom: 1;
+		*display: inline;
+	}
+	.bx-wrapper .bx-pager.bx-default-pager a {
+		background: none;
+		border:3px solid #fff;
+		text-indent: -9999px;
+		display: block;
+		width: 15px;
+		height: 15px;
+		margin: 0 5px;
+		outline: 0;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		border-radius: 15px;
+	}
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active {
+		background: #fff;
+	}
+	//DIRECTION CONTROLS (NEXT / PREV)
+	.bx-wrapper {
+		.bx-prev {
+			left: 2%;
+			@media only screen and (min-width: 1300px) {
+				left: 0;
+				@include transition(all 0.2s ease);
+				@include scale(0,0);
+			}
+			&:after {
+				content: "";
+			}
+		}
+		.bx-next {
+			right: 2%;
+			@media only screen and (min-width: 1300px) {
+				right: 0;
+				@include transition(all 0.2s ease);
+				@include scale(0,0);
+			}
+			&:after {
+				content: "";
+			}
+		}
+		&:hover {
+			.bx-prev {
+				@media only screen and (min-width: 1300px) {
+					left: 70px;
+					@include scale(1,1);
+				}
+			}
+			.bx-next {
+				@media only screen and (min-width: 1300px) {
+					right: 70px;
+					@include scale(1,1);
+				}
+			}
+		}
+	}
+	.bx-wrapper .bx-controls-direction a {
+		background: none;
+		height: 44px;
+		margin:-22px 0 0;
+		outline: 0;
+		position: absolute;
+		text-indent: -9999px;
+		top:50%;
+		width: 44px;
+		z-index: 9999;
+		@include border-radius(50%);
+		@include box-shadow(2px 3px 7px rgba(0,0,0,0.12));
+		@include transition(all 0.2s ease);
+		&:after { 
+			display: block;
+			color: $light-text-color;
+			text-indent: 0;
+			text-align: center;
+			font-size: 24px;
+			font-family: $font-icon;
+			z-index: 2;
+		}
+		&:hover {
+			background: #00796b;
+		}
+		&:active, &:active:focus {	
+			@include box-shadow(0 8px 17px 0 rgba(0, 0, 0, 0.2));
+		}
+	}
+	.bx-wrapper .bx-controls-direction a.disabled {
+		display: none;
+	}
+	//AUTO CONTROLS (START / STOP)
+	.bx-wrapper .bx-controls-auto {
+		text-align: center;
+	}
+	.bx-wrapper .bx-controls-auto .bx-start {
+		display: block;
+		width: 10px;
+		height: 11px;
+		outline: 0;
+		margin: 0 3px;
+		&:before {
+			content:'';
+			font-family:$font-icon;
+			color:#fff;
+		}
+	}
+	.bx-wrapper .bx-controls-auto .bx-stop {
+		display: block;
+		width: 9px;
+		height: 11px;
+		outline: 0;
+		margin: 0 3px;
+		&:before {
+			content:'';
+			font-family:$font-icon;
+			color:#fff;
+		}
+	}
+	//PAGER WITH AUTO-CONTROLS HYBRID LAYOUT
+	.bx-wrapper .bx-controls .bx-controls-auto {
+		right: 15px;
+		width: 35px;
+		top:15px;
+	}
+	//IMAGE CAPTIONS
+	.bx-wrapper .bx-caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: #666;
+		background: rgba(80, 80, 80, 0.75);
+		width: 100%;
+	}
+	.bx-wrapper .bx-caption span {
+		color: $light-text-color;
+		font-family: $font-family;
+		display: block;
+		font-size: .85em;
+		padding: 10px;
+	}
+}
+.ie8 {
+	#homepage-slider{
+		.bx-wrapper .bx-controls-direction a {
+			&:before {
+				background: $dark-background;
+			}
+		}
+	}
+}
+
+#bx-pager-thumb {
+	text-align:center;
+	padding:10px 0;
+	a {
+		display:inline-block;
+		max-width:150px;
+		width:31%;
+		img {
+			max-width:100%;
+			height:auto;	
+		}
+	}
+}

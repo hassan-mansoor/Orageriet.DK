@@ -1,0 +1,68 @@
+#currencies-block-top {
+  float: left;
+  position: relative;
+  padding: 10px 18px 11px 0;
+  position: relative;
+  z-index: 101; }
+  #currencies-block-top span.firstWord {
+    display: none; }
+  #currencies-block-top div.current {
+    cursor: pointer;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    #currencies-block-top div.current strong {
+      font-weight: normal; }
+    #currencies-block-top div.current:hover, #currencies-block-top div.current.active {
+      color: #333; }
+    #currencies-block-top div.current:after {
+      font-family: "material-design";
+      content: "\e07b";
+      color: #46c29b;
+      padding-left: 4px; }
+    #currencies-block-top div.current.active:after {
+      content: "\e07c"; }
+    @media (max-width: 479px) {
+      #currencies-block-top div.current .cur-label {
+        display: none; } }
+  #currencies-block-top ul {
+    background: #00796b;
+    display: none;
+    left: 0;
+    margin: 0;
+    min-width: 150px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 35px;
+    z-index: 2;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.12);
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.12); }
+    #currencies-block-top ul li {
+      line-height: 26px;
+      font-size: 12px;
+      margin: 5px 0;
+      color: #fff;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      -moz-transition: all 0.1s ease;
+      -o-transition: all 0.1s ease;
+      -webkit-transition: all 0.1s ease;
+      transition: all 0.1s ease; }
+      #currencies-block-top ul li a,
+      #currencies-block-top ul li > span {
+        padding: 0 5px;
+        display: block;
+        color: #fff; }
+      #currencies-block-top ul li.selected, #currencies-block-top ul li.selected > span, #currencies-block-top ul li.selected a, #currencies-block-top ul li:hover a {
+        color: #46c29b; }
+      #currencies-block-top ul li.selected, #currencies-block-top ul li:hover {
+        background: #fff;
+        -moz-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.12);
+        -webkit-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.12);
+        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.12); }
